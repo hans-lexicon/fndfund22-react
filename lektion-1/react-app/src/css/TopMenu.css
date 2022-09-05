@@ -1,0 +1,93 @@
+/* top-menu */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 40px;
+}
+    .top-menu > .container {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .top-menu .site-settings {
+        display: flex;
+    }
+
+        .top-menu .site-settings .dropdown-theme {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+        }
+            .top-menu .site-settings .dropdown-theme button {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                padding: 0;
+            }
+                .top-menu .site-settings .dropdown-theme button:hover {
+                    color: var(--color-theme-dark);
+                }
+
+            .top-menu .site-settings .dropdown-theme .dropdown-menu {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                width: 250px;
+                margin-top: 3rem;
+            }
+                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                    border: none;
+                    width: 100%;
+                    margin: 0;
+                }
+                    .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                        background-color: var(--color-theme-dark);
+                        color: var(--color-white);
+                    }
+
+    .top-menu .menu-links {
+        display:none;
+    }
+
+    .top-menu .menu-links .links {
+        display: none;
+    }
+
+    .top-menu .menu-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 0 1.2rem;
+    }
+        .top-menu .menu-links a:hover {
+            color: var(--color-theme-dark);
+        }
+
+        .top-menu .menu-links .social-media {
+            margin-left: 1rem;
+            font-size: var(--font-size-14);
+        }
+            .top-menu .menu-links .social-media a {
+                margin: 0 0.3rem;
+            }
+                .top-menu .menu-links .social-media a:last-child {
+                    margin: 0 0 0 0.3rem;
+                }
+
+@media (min-width: 578px) {
+    .top-menu .menu-links {
+        display: block;
+    }
+
+    .top-menu > .container {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .top-menu .menu-links .links {
+        display: inline;
+    }
+}

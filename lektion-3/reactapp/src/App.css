@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --color-theme: #20D3C2;
+    --color-theme-light: #EDFCFA;
+    --color-theme-dark: #0E153D;
+    --color-theme-dark-light: #50546E;
+    --color-dark: #080C24;
+    --color-white: #FFFFFF;
+    --color-gray-0: #AAAAAA;
+    --color-gray-1: #CCCCCC;
+    --color-gray-2: #E3E3E3;
+    --color-gray-3: #EEEEEE;
+    --color-gray-4: #F6F6F6;
+    --color-gray-5: #777777;
+    --color-product-instock: #82D8C6;
+    --color-product-outofstock: #FE6C6C;
+    
+    --font-play: 'Play', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-size-14: 1.17rem;
+    --font-size-16: 1.33rem;
+    --font-size-18: 1.50rem;
+    --font-size-24: 2rem;
+    --font-size-36: 3rem;
+    --font-size-60: 5rem;
+
+    --border-radius-small: 8px;
+    --border-radius-medium: 25px;
+    --border-radius-rounded: 50%;
+}
+
+/* general */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-theme:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+    .btn-white:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+
+.bg-theme {
+    background-color: var(--color-theme);
+}
+.text-theme {
+    color: var(--color-theme);
+}
+
+.instock {
+    color: var(--color-product-instock);
+}
+.outofstock {
+    color: var(--color-product-outofstock);
+}
+
+
+.section-title {
+    padding: 3rem 0;
+    color: var(--color-theme-dark);
+    text-align: center;
+}
+    .section-title h1 {
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+    }
+        .section-title h1 span {
+            color: var(--color-theme);
+        }
+
+    .section-title p {
+        margin: 1rem 0;
+    }
+
+a {
+    color: var(--color-theme);
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+}
+    a:hover {
+        color: var(--color-theme-dark);
+        text-decoration: underline;
+    }
+
+
+.form-theme .required {
+    color: var(--color-theme);
+}
+
+.form-theme .card {
+    background-color: var(--color-gray-4);
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 1.5rem;
+}
+
+    .form-theme .card .card-body {
+        color: var(--color-theme-dark);
+    }
+
+        .form-theme .card .card-body h1 {
+            font-size: 1.5rem;
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-medium);
+            margin-bottom: 1.5rem;
+        }
+
+    .form-theme .card .card-text {
+        margin-bottom: 1.5rem;
+        line-height: 2;
+    }
+    .form-theme .card .card-text.text-small {
+        color: var(--color-gray-5);
+        font-size: 0.875rem;
+    }
+
+    .form-theme .card .remember-me {
+        display: flex;
+    }
+        .form-theme .card .remember-me label {
+            margin-left: 1rem;
+        }
+
+    .form-theme form input[type=checkbox] {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .form-theme form input[type=text],
+    .form-theme form input[type=email],
+    .form-theme form input[type=password] {
+        display: block;
+        width: 100%;
+        padding: 0.6rem 0.9rem;
+        margin-top: 0.2rem;
+        border-radius: var(--border-radius-small);
+        border: none;
+    }
+        .form-theme form input:focus {
+            outline: 1;
+            outline-color: var(--color-gray-1);
+        }
+
+
+        .form-theme .external-logins .external-logins-title {
+            position: relative;
+            width: 100%;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+            .form-theme .external-logins .external-logins-title .external-logins-label {
+                background-color: var(--color-gray-4);
+                padding: 0 1rem;
+                z-index: 2;
+            }
+
+            .form-theme .external-logins .external-logins-title .external-logins-line {
+                position: absolute;
+                border: 1px solid var(--color-gray-0);
+                opacity: 0.4;
+                top: 10px;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+
+        .form-theme .external-logins .external-logins-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+            .form-theme .external-logins .external-logins-buttons .facebook-button {
+                text-align: left;
+            }
+                .form-theme .external-logins .external-logins-buttons .facebook-button button {
+                    background-image: url(./images/buttons/facebook-login-button.svg);
+                    background-repeat: no-repeat;
+                    border: none;
+                    height: 42px;
+                    width: 235px;
+                }
+                .form-theme .external-logins .external-logins-buttons .facebook-button button:hover {
+                    filter: brightness(90%);
+                }
+
+            .form-theme .external-logins .external-logins-buttons .google-button {
+                text-align: right;
+            }
+                .form-theme .external-logins .external-logins-buttons .google-button button {
+                    background-image: url(./images//buttons/google-login-button.svg);
+                    background-repeat: no-repeat;
+                    border: none;
+                    height: 42px;
+                    width: 235px;
+                }               
+                .form-theme .external-logins .external-logins-buttons .google-button button:hover {
+                    filter: brightness(90%);
+                }
+
+/* signup-signin */
+.signup-signin {
+    margin: 5rem 0;
+}
+    .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: start;
+    }

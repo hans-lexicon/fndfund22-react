@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  --color-dark: #292b2e;
+  --color-theme: #61dafb;
+  --color-white: #ffffff; 
+
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+}
+
+.bg-theme {
+  background-color: var(--color-theme);
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+  .nav-link:hover {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+.page-title h1 {
+  font-size: 1.8rem;
+
+}
+
+.bg-card-dark {
+  background-color: #1d1d1d;
+}
+
+.card {
+  color:#97989b;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.btn-dark {
+  color:#97989b;
+  background-color: #1d1d1d;
+}
+
+.btn-custom {
+  padding: 0.8rem 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-custom i {
+  margin-left: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.custom-form-bg {
+  background-color: #191919;
+  border-radius: 10px;
+  padding:0.5rem;
+}
+
+.custom-form {
+  color:#97989b;
+  background-color: #1c1c1c;
+  height: 60px;
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #1c1c1c;
+  border-radius: 8px;
+  outline: none;
+}
+
+.custom-form:focus {
+  border: 1px solid #3d3d3d;
+}

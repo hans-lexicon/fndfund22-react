@@ -1,0 +1,30 @@
+.__section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color:#333333;
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include md {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 0.8em;
+        font-weight: 300;
+        margin: 0;
+    }
+}
+

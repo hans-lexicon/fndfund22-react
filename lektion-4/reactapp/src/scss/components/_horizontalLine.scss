@@ -1,0 +1,14 @@
+.__horizontal-line {
+    background-color: #20D3C2;
+    height: 2px;
+    width: 85%;
+    margin: 1rem 0;
+
+    @include md {
+        width: 65%;
+    }
+
+    @include lg {
+        width: 45%;
+    }
+}
